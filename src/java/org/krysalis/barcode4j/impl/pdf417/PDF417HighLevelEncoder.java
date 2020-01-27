@@ -301,7 +301,7 @@ public class PDF417HighLevelEncoder implements PDF417Constants {
         StringBuffer tmp = new StringBuffer(count / 3 + 1);
         final BigInteger num900 = BigInteger.valueOf(900);
         final BigInteger num0 = BigInteger.valueOf(0);
-        while (idx < count - 1) {
+        while (idx < count) {
             tmp.setLength(0);
             int len = Math.min(44, count - idx);
             String part = "1" + msg.substring(startpos + idx, startpos + idx + len);
